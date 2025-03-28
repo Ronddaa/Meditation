@@ -1,0 +1,13 @@
+.keySections{
+    background: url(./key.webp) no-repeat center;
+}
+
+.keySText{
+    font-size: 24px;
+    font-family: "Moula";
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+}

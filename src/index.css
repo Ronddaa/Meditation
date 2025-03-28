@@ -108,3 +108,13 @@ img {
   margin-bottom: 20px;
   width: 100%;
 }
+
+h2{
+  color: transparent;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: 600;
+}

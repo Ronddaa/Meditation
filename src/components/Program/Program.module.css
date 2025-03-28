@@ -1,0 +1,79 @@
+.titleProgram{
+    font-size: 47px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrapperProgramList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.goldStyle{
+    border: 1px solid #E1A230;
+}
+.goldStyle h3{
+    color: #E1A230;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Moula";
+padding: 13px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.goldArrow{
+    fill: #E1A230;
+}
+.whiteStyle{
+    border: 1px solid #E1A230;
+}
+.whiteStyle h3{
+    color: #FCE097;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Moula";
+    padding: 13px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.whiteArrow{
+    fill: #FCE097;
+}
+.content {
+    background-color: #FEECDA;
+    padding: 10px;
+    transition: 0.5s;
+  opacity: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  overflow: hidden;
+}
+
+.content.show {
+    opacity: 1;
+  transform: translateY(0);
+  max-height: 1000px;
+}
+.contentText{
+    font-size: 14px;
+    color: #131313;
+}
+.contentText span{
+    font-weight: 600;
+}
+
+
+
+.active {
+    background-color: #E1A230; /* Можно задать любой цвет фона */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #B3890F; /* Сменить цвет границы */
+}
+
+.active h3 {
+    color: #131313; /* Изменить цвет заголовка */
+    font-weight: 600;
+}

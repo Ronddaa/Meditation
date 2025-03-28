@@ -1,0 +1,34 @@
+.titleAbout{
+    font-weight: 600;
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+
+
+.aboutInfo{
+    border: 1px solid #E1A230;
+    padding: 23px 0 31px;
+}
+.wrapperAbout li{
+    font-size: 18px;
+    text-align: center;
+}
+.wrapperAbout li:first-child{
+    max-width: 268px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+}
+.wrapperAbout li:last-child{
+    max-width: 214px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.wrapperAbout li span{
+    color: #E1A230;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.AboutIMG{
+    border-top: 1px solid #E1A230;
+    border-bottom: 1px solid #E1A230;
+}

@@ -1,0 +1,86 @@
+.titleProposal {
+  font-weight: 600;
+  font-size: 47px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.wrapperProposal {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.wrapperProposal li {
+  position: relative;
+  width: 302px;
+  height: 140px;
+  padding: 10%;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.wrapperProposal li::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* Растягивает псевдоэлемент */
+  padding: 2px; /* Толщина границы */
+  border-radius: inherit; /* Наследует скругление */
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  z-index: -1; /* Отправляет на задний план */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude; /* Вырезает внутреннюю часть */
+}
+.wrapperProposal li:nth-child(1)::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    bottom: 0;
+    right: 25px;
+}
+.wrapperProposal li:nth-child(2)::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    top: 0;
+    left: 40px;
+}
+.wrapperProposal li:nth-child(3)::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    bottom: -20px;
+    left: 50%;
+    transform: rotate(55deg);
+}
+.wrapperProposal li:nth-child(4)::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    top: 5px;
+    right: 25px;
+}
+.wrapperProposal li:nth-child(5)::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    top: -10px;
+    left: 70px;
+}
+.bigText {
+  max-width: 210px;
+}
+.lowText {
+  max-width: 165px;
+}
+.wrapperHeroBtn{
+    padding: 0 44px;
+}
+.discout{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: transparent;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: "Montserrat";
+  text-align: right;
+}
