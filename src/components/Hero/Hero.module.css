@@ -1,0 +1,163 @@
+.heroSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./HeroIMG.webp") no-repeat center/cover;
+    background-position-y: 0px;
+    background-size: 100%;
+  padding-top: 84px;
+}
+.aboutCourseHero {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+.aboutCourseHero li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.aboutCourseHero li:nth-child(2) {
+  text-align: right;
+}
+.aboutCoursesQuestion {
+  font-size: 16px;
+  color: #feecda;
+}
+.aboutHeroAnswer {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+.mainTitle {
+  font-size: 56px;
+  font-weight: 600;
+  color: #feecda;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-bottom: 318px;
+}
+.mainTitleWhite {
+  grid-area: 1 / 1 / 2 / 4;
+}
+.mainTitleYellow {
+  color: transparent;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  grid-area: 2 / 1 / 3 / 3;
+}
+.mainTitleLow {
+  font-size: 15px;
+  grid-area: 2 / 3 / 3 / 4;
+  font-weight: 400;
+  font-family: "Moula";
+  margin: auto 0;
+}
+
+.heroWrapperPrice {
+  border-top: 1px solid #ffbd0196;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 0 auto;
+}
+.priceBefore {
+  font-size: 18px;
+  font-family: "Montserrat";
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #b4b4b4;
+  z-index: 4;
+}
+.priceBefore::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #b4b4b4;
+  left: 0;
+  top: 50%;
+}
+.priceNow {
+  font-weight: 500;
+  font-size: 40px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  z-index: 5;
+}
+
+
+.wrapperInfoBtn{
+    background-color: #131313;
+    margin-top: -30px;
+    box-shadow: 0px 0px 75px 100px #131313;
+
+}
+
+.wrapperAboutCourse{
+    width: 302px;
+    height: 167px;
+    border-radius: 50%;
+    border: 1px solid #ffbd01;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 27px 50px 27px 50px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 75px 100px #131313;
+    margin-bottom: 30px;
+    position: relative;
+}
+.wrapperAboutCourse::before{
+    content: url('../gift.svg');
+    position: absolute;
+    right: 30px;
+    top: 5px;
+}
+.wrapperAboutCourse li{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Moula";
+    display: flex;
+    gap: 5px;
+}
+.iconStar{
+    margin-top: -3px;
+}
+
+.wrapperHeroBtn{
+    padding: 0 57px;
+}
+.discout{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: transparent;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: "Montserrat";
+  text-align: right;
+}
+
+.timingText{
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}

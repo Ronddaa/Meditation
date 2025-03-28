@@ -1,0 +1,16 @@
+header{
+    width: 40px;
+    height: 40px;
+    background-color: #E1A230;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    right: 20px;
+}
+.burgerMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

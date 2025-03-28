@@ -1,0 +1,110 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Moula";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Moula/fonnts.com-Moula_Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Moula";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/Moula/fonnts.com-Moula_Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/Montserrat/Montserrat-Thin.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Montserrat/Montserrat-ExtraBold.woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth; /* Для плавного скролла по якорям и по сайту */
+  color: #FEECDA;
+  background-color: #131313;
+  font-family: "Moula", sans-serif;
+}
+#root{
+  height: 100%;
+}
+div {
+  position: relative;
+}
+section {
+  position: relative; /* делаем позиционирование в секциях, удобно для размещения абсолютных блоков */
+  padding: 75px 0;
+  overflow: hidden;
+}
+ul,
+ol {
+  list-style: none; /* Убираем базовые цифры и пометки списков */
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+}
+button {
+  cursor: pointer; /* Добавляем палец при наведении на кнопку */
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container{
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Button */
+.buyBtn{
+  background: linear-gradient(90deg, #E1A230, #FDE198);
+  padding: 18px 70px;
+  font-family: "Moula";
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 20px;
+  width: 100%;
+}
