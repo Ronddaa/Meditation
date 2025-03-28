@@ -1,0 +1,48 @@
+.sectionWho{
+    background-color: #FEECDA;
+}
+
+.titleWho{
+    font-size: 32px;
+color: transparent;
+  background: linear-gradient(90deg, #E1A230, #131313);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.sectionWho .mySwiper{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.swiperSlide{
+    color: #131313;
+    font-size: 14px;
+}
+.swiperSlide p{
+    background-color: #fff;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 25px 18px;
+    position: relative;
+    text-align: center;
+}
+.swiperSlide p::after{
+    position: absolute;
+    content: url(../Star2.svg);
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%) rotate(-4deg);
+}
+.sectionWho :global(.swiper-button-prev:after){
+    font-size: 18px;
+    color: #131313;
+    margin-right: 30px;
+}
+.sectionWho :global(.swiper-button-next::after){
+    font-size: 18px;
+    color: #131313;
+    margin-left: 30px;
+}

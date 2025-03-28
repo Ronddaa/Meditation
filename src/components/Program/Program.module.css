@@ -10,6 +10,7 @@
 }
 .goldStyle{
     border: 1px solid #E1A230;
+    transition: 0.3s;
 }
 .goldStyle h3{
     color: #E1A230;
@@ -24,9 +25,11 @@ align-items: center;
 }
 .goldArrow{
     fill: #E1A230;
+    transition: 0.3s;
 }
 .whiteStyle{
     border: 1px solid #E1A230;
+    transition: 0.3s;
 }
 .whiteStyle h3{
     color: #FCE097;
@@ -41,21 +44,20 @@ align-items: center;
 }
 .whiteArrow{
     fill: #FCE097;
+    transition: 0.3s;
 }
 .content {
-    background-color: #FEECDA;
-    padding: 10px;
-    transition: 0.5s;
-  opacity: 0;
-  transform: translateY(100%);
-  max-height: 0;
-  overflow: hidden;
+  background-color: #FEECDA;
+  padding: 10px;
+  transition: 0.5s;
+    opacity: 0;
+    display: none;
 }
 
 .content.show {
-    opacity: 1;
-  transform: translateY(0);
-  max-height: 1000px;
+  max-height: 210px;
+  opacity: 1;
+  display: block;
 }
 .contentText{
     font-size: 14px;
@@ -67,13 +69,32 @@ align-items: center;
 
 
 
-.active {
+.goldStyle.active {
     background-color: #E1A230; /* Можно задать любой цвет фона */
     color: #fff; /* Цвет текста */
     border: 1px solid #B3890F; /* Сменить цвет границы */
 }
 
-.active h3 {
+.goldStyle.active h3 {
     color: #131313; /* Изменить цвет заголовка */
     font-weight: 600;
+}
+.goldStyle.active .goldArrow{
+    transform: rotate(-180deg);
+    fill: #131313;
+}
+
+.whiteStyle.active {
+    background-color: #FCE097; /* Можно задать любой цвет фона */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #B3890F; /* Сменить цвет границы */
+}
+
+.whiteStyle.active h3 {
+    color: #131313; /* Изменить цвет заголовка */
+    font-weight: 600;
+}
+.whiteStyle.active .whiteArrow{
+    transform: rotate(-180deg);
+    fill: #131313;
 }

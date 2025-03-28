@@ -1,0 +1,39 @@
+.btwText{
+    font-size: 20px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 306px;
+    margin: 0 auto 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.wrapperHeroBtn{
+    padding: 0 44px;
+}
+.discout{
+    font-size: 36px;
+    text-transform: uppercase;
+    color: transparent;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: "Montserrat";
+  text-align: right;
+}
+
+.timingText{
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}

@@ -182,7 +182,7 @@ export default function Program() {
                     <use xlinkHref={`${sprite}#icon-arrow`}></use>
                   </svg>
                 </h3>
-                {activeItem === item.id && (
+                
                   <div
                     className={`${styles.content} ${
                       activeItem === item.id ? styles.show : ""
@@ -190,15 +190,15 @@ export default function Program() {
                   >
                     <p className={styles.contentText}>{item.content}</p>
                     <p className={styles.contentText}>
-                      <span>Что мешает?</span>
+                      <span>Что мешает? </span>
                       {item.contents}
                     </p>
                     <p className={styles.contentText}>
-                      <span>Как решает?</span>
+                      <span>Как решает? </span>
                       {item.contentt}
                     </p>
                   </div>
-                )}
+                
               </li>
             );
           })}
