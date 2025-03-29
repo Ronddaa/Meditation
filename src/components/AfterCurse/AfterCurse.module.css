@@ -1,0 +1,47 @@
+.sectionAfterC{
+    padding-top: 20px;
+    background-image: url(./Afte1.webp), url(./Afte2.webp), url(./Afte3.webp), url(./Afte4.webp);
+
+    background-size: 440px;
+    background-position: top,  25% 35%, 50% 71%, 75% 106%;
+    background-repeat: no-repeat;
+}
+.sectionAfterC::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85); /* Полупрозрачный чёрный цвет */
+  pointer-events: none; /* Чтобы слой не блокировал взаимодействие */
+}
+
+.titleAfter{
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.wrapperAfterText{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.evenList{
+    max-width: 90%;
+}
+.oddList{
+    max-width: 266px;
+    margin-left: auto;
+}
+.numberList{
+    font-size: 16px;
+    color: #E1A230;
+    margin-bottom: 5px;
+}
+.textList{
+    font-size: 16px;
+    color: #fff;
+}

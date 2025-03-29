@@ -174,13 +174,6 @@ export default function Program() {
               >
                 <h3 className={styles.titleProgramList}>
                   {item.title}
-                  <svg
-                    className={styles[item.classArrow]}
-                    width={32}
-                    height={32}
-                  >
-                    <use xlinkHref={`${sprite}#icon-arrow`}></use>
-                  </svg>
                 </h3>
                 
                   <div

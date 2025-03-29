@@ -1,0 +1,79 @@
+.whiteSection {
+  background-color: #feecda;
+}
+
+.titleWhiteSection {
+  font-size: 30px;
+  color: transparent;
+  background: linear-gradient(90deg, #e1a230, #131313);
+  -webkit-background-clip: text; /* Для Safari */
+  background-clip: text;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.wrapperHeroBtn :global(.buyBtn){
+    max-width: 90%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.wrapperPrice{
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    padding-top: 26px;
+    transform: rotate(9deg);
+    margin: 0 auto 40px;
+}
+.wrapperPrice::after{
+    content: "";
+  position: absolute;
+  inset: 0; /* Растягивает псевдоэлемент */
+  padding: 2px; /* Толщина границы */
+  border-radius: 50%; /* Наследует скругление */
+  width: 144px;
+  height: 144px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #e1a230, #fde198);
+  z-index: -1; /* Отправляет на задний план */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+}
+
+.priceBefore{
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B4B4B4;
+    position: relative;
+    font-family: 'Montserrat';
+}
+.priceBefore::after{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: #B4B4B4;
+    top: 53%;
+    left: 37%;
+}
+.priceNow{
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #131313;
+    font-family: 'Montserrat';
+}
+.timingText{
+    color: #131313;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
