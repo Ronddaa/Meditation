@@ -1,34 +1,42 @@
 import CountdownTimer from '../Timer/Timer';
 import styles from './Hero.module.css'
 import sprite from '../icons.svg'
+import { useTranslation } from 'react-i18next';
 
 export default function Hero() {
+
+  const { t, i18n } = useTranslation();
+
     return (
       <section className={styles.heroSection}>
         <div className="container">
           <ul className={styles.aboutCourseHero}>
             <li>
-              <p className={styles.aboutCoursesQuestion}>длительность:</p>
-              <p className={styles.aboutHeroAnswer}>24 дня</p>
+              <p className={styles.aboutCoursesQuestion}>
+                {t("hero.duration")}
+              </p>
+              <p className={styles.aboutHeroAnswer}>{t("hero.durationTime")}</p>
             </li>
             <li>
-              <p className={styles.aboutCoursesQuestion}>формат:</p>
-              <p className={styles.aboutHeroAnswer}>онлайн</p>
+              <p className={styles.aboutCoursesQuestion}>{t("hero.format")}</p>
+              <p className={styles.aboutHeroAnswer}>{t("hero.formatType")}</p>
             </li>
           </ul>
           <h1 className={styles.mainTitle}>
-            <span className={styles.mainTitleWhite}>12 ключей</span>{" "}
-            <span className={styles.mainTitleYellow}>к себе</span>{" "}
-            <span className={styles.mainTitleLow}>
-              онлайн-курс медитаций от психолога
-            </span>
+            <span className={styles.mainTitleWhite}>
+              {t("hero.titleWhite")}
+            </span>{" "}
+            <span className={`${styles.mainTitleYellow} ${i18n.language === 'ua'? styles.mainTitleYellowUA : ''}`}>
+              {t("hero.titleYellow")}
+            </span>{" "}
+            <span className={styles.mainTitleLow}>{t("hero.titleLow")}</span>
           </h1>
           <ul className={styles.heroWrapperPrice}>
             <li>
               <p className={styles.priceBefore}>53$</p>
             </li>
             <li>
-              <p className={styles.priceNow}>13$</p>
+              <p className={styles.priceNow}>33$</p>
             </li>
           </ul>
         </div>
@@ -38,20 +46,19 @@ export default function Hero() {
               <svg className={styles.iconStar} width={24} height={24}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-                        видео «растяжка для успокоения ума»
+              {t("hero.aboutCourses1")}
             </li>
             <li className={styles.aboutCourse}>
               <svg className={styles.iconStar} width={24} height={24}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              авторский чек-лист «Тревога ХВАТИТ! <br />6 рабочих техник от
-              постоянной тревоги»
+              {t("hero.aboutCourses2")}
             </li>
           </ul>
           <div className={styles.wrapperHeroBtn}>
             <p className={styles.discout}>-75%</p>
-            <button className="buyBtn">купить курс</button>
-            <p className={styles.timingText}>предложение действует:</p>
+            <button className="buyBtn">я готова!</button>
+            <p className={styles.timingText}>{t("hero.timing")}</p>
             <CountdownTimer />
           </div>
         </article>

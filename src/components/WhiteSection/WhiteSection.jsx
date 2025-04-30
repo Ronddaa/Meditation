@@ -4,6 +4,7 @@ import styles from "./WhiteSection.module.css";
 export default function WhiteSection() {
   return (
     <section className={styles.whiteSection}>
+      <div className={styles.elipseTop}></div>
       <div className="container">
         <h2 className={styles.titleWhiteSection}>
           не упусти шанс купить по самой низкой цене
@@ -19,6 +20,7 @@ export default function WhiteSection() {
           <CountdownTimer />
         </div>
       </div>
+      <div className={styles.elipseBottom}></div>
     </section>
   );
 }

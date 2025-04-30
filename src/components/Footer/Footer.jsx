@@ -4,6 +4,7 @@ import sprite from "../icons.svg";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.elipseTop}></div>
       <div className="container">
         <h2 className={styles.titleFooter}>Любовь Мальцева</h2>
         <ul className={styles.wrapperSocialLinks}>
@@ -31,10 +32,12 @@ export default function Footer() {
         </ul>
         <ul className={styles.wrapperLinks}>
           <li>
-            <a href="#">tviy.treners.supp@gmail.com</a>
+            <a href="mailto:tviy.treners.supp@gmail.com">
+              tviy.treners.supp@gmail.com
+            </a>
           </li>
           <li>
-            <a href="#">+380954417376</a>
+            <a href="tel:+380954417376">+380954417376</a>
           </li>
         </ul>
         <ul className={styles.offer}>

@@ -22,6 +22,7 @@ export default function App() {
       <Hero />
       <KeySections />
       <About />
+      <Effects />
       <Proposal />
       <Program />
       <BtwBuy />
@@ -30,10 +31,10 @@ export default function App() {
       <AfterCurse />
       <Reviews />
       <WhiteSection />
-      <Effects />
+
       <Questions />
       <Footer />
     </>
-)
+  );
 
 }
