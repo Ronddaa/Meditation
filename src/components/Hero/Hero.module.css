@@ -117,7 +117,7 @@
 
 .wrapperAboutCourse{
     width: 302px;
-    height: 167px;
+    /* height: 167px; */
     border-radius: 50%;
     border: 1px solid #ffbd01;
     display: flex;
@@ -140,8 +140,12 @@
     font-weight: 500;
     font-size: 16px;
     font-family: "Moula";
-    display: flex;
-    gap: 5px;
+    margin-left: 15px;
+}
+.wrapperAboutCourse li p:first-child::after{
+  content: url(../star.svg);
+  position: absolute;
+  left: 45px;
 }
 .iconStar{
     margin-top: -3px;

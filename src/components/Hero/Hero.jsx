@@ -2,6 +2,7 @@ import CountdownTimer from '../Timer/Timer';
 import styles from './Hero.module.css'
 import sprite from '../icons.svg'
 import { useTranslation } from 'react-i18next';
+import TextBlock from '../common/TextBlock';
 
 export default function Hero() {
 
@@ -26,7 +27,11 @@ export default function Hero() {
             <span className={styles.mainTitleWhite}>
               {t("hero.titleWhite")}
             </span>{" "}
-            <span className={`${styles.mainTitleYellow} ${i18n.language === 'ua'? styles.mainTitleYellowUA : ''}`}>
+            <span
+              className={`${styles.mainTitleYellow} ${
+                i18n.language === "ua" ? styles.mainTitleYellowUA : ""
+              }`}
+            >
               {t("hero.titleYellow")}
             </span>{" "}
             <span className={styles.mainTitleLow}>{t("hero.titleLow")}</span>
@@ -43,16 +48,10 @@ export default function Hero() {
         <article className={styles.wrapperInfoBtn}>
           <ul className={styles.wrapperAboutCourse}>
             <li className={styles.aboutCourse}>
-              <svg className={styles.iconStar} width={24} height={24}>
-                <use xlinkHref={`${sprite}#icon-star`}></use>
-              </svg>
-              {t("hero.aboutCourses1")}
+              <TextBlock tKey="hero.aboutCourses1" />
             </li>
             <li className={styles.aboutCourse}>
-              <svg className={styles.iconStar} width={24} height={24}>
-                <use xlinkHref={`${sprite}#icon-star`}></use>
-              </svg>
-              {t("hero.aboutCourses2")}
+              <TextBlock tKey="hero.aboutCourses2" />
             </li>
           </ul>
           <div className={styles.wrapperHeroBtn}>
