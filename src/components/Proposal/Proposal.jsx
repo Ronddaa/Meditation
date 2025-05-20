@@ -1,59 +1,50 @@
 import styles from "./Proposal.module.css";
 import sprite from "../icons.svg";
 import CountdownTimer from "../Timer/Timer";
+import { useTranslation } from "react-i18next";
 
 export default function Proposal() {
+
+  const {t, i18n} = useTranslation()
   return (
     <section className={styles.proposalSection}>
       <div className="container">
-        <h2 className={styles.titleProposal}>что ты получишь?</h2>
+        <h2 className={styles.titleProposal}>{t("proposalSection.title")}</h2>
         <ul className={styles.wrapperProposal}>
           <li>
             <svg className={styles.iconStar} width={13} height={13}>
               <use xlinkHref={`${sprite}#icon-star`}></use>
             </svg>
-            <p className={styles.bigText}>
-              12 медитаций, доступных для скачивания или прослушивания онлайн в
-              удобное время
-            </p>
+            <p className={styles.bigText}>{t("proposalSection.list1")}</p>
           </li>
           <li>
             <svg className={styles.iconStar} width={13} height={13}>
               <use xlinkHref={`${sprite}#icon-star`}></use>
             </svg>
-            <p className={styles.lowText}>
-              Дополнительные задания в процессе прохождения курса
-            </p>
+            <p className={styles.lowText}>{t("proposalSection.list2")}</p>
           </li>
           <li>
             <svg className={styles.iconStar} width={13} height={13}>
               <use xlinkHref={`${sprite}#icon-star`}></use>
             </svg>
-            <p className={styles.bigText}>
-              ответы на вопросы, обратная связь от автора курса Любовь Мальцевой
-            </p>
+            <p className={styles.bigText}>{t("proposalSection.list3")}</p>
           </li>
           <li>
             <svg className={styles.iconStar} width={13} height={13}>
               <use xlinkHref={`${sprite}#icon-star`}></use>
             </svg>
-            <p className={styles.lowText}>
-              бесплатное видео «растяжка для успокоения ума»
-            </p>
+            <p className={styles.lowText}>{t("proposalSection.list4")}</p>
           </li>
           <li>
             <svg className={styles.iconStar} width={13} height={13}>
               <use xlinkHref={`${sprite}#icon-star`}></use>
             </svg>
-            <p className={styles.bigText}>
-              чек-лист «Тревога ХВАТИТ! 6 рабочих техник <br /> от постоянной
-              тревоги»
-            </p>
+            <p className={styles.bigText}>{t("proposalSection.list5")}</p>
           </li>
         </ul>
         <div className={styles.wrapperHeroBtn}>
           <p className={styles.discout}>-75%</p>
-          <button className="buyBtn">купить курс</button>
+          <button className="buyBtn">Я готова!</button>
           <CountdownTimer />
         </div>
       </div>

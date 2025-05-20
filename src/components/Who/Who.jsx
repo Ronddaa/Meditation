@@ -6,38 +6,27 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 export default function Who() {
+  const {t, i18n} = useTranslation()
   return (
     <section className={styles.sectionWho}>
       <div className="container">
-        <h2 className={styles.titleWho}>кому подойдет?</h2>
+        <h2 className={`${styles.titleWho} ${i18n.language === "ua" ? styles.titleWhoUA : ""} `}>{t("whoSection.title")}</h2>
         <Swiper
           navigation={true}
           modules={[Navigation]}
           className={styles.mySwiper}
         >
           <SwiperSlide className={styles.swiperSlide}>
-            <p>
-              Кто чувствует, что застрял в своих переживаниях и не может с ними
-              справиться – если тревога, страхи, обиды, низкая самооценка или
-              одиночество мешают тебе жить спокойно и свободно.
-            </p>
+            <p>{t("whoSection.slide1")}</p>
           </SwiperSlide>
           <SwiperSlide className={styles.swiperSlide}>
-            <p>
-              Постоянно анализирует и прокручивает мысли, но не находит решения
-              – если ты устал(а) от бесконечных размышлений и хочешь не просто
-              «думать», а реально почувствовать, что внутри становится легче.
-            </p>
+            <p>{t("whoSection.slide2")}</p>
           </SwiperSlide>
           <SwiperSlide className={styles.swiperSlide}>
-            <p>
-              Хочет лучше понять себя, быть независимым и научиться слушать свои
-              желания – если тебе сложно сказать «нет», ты зависишь от чужого
-              мнения, не знаешь, куда двигаться, или забываешь заботиться о
-              себе.
-            </p>
+            <p>{t("whoSection.slide3")}</p>
           </SwiperSlide>
         </Swiper>
       </div>

@@ -13,13 +13,18 @@
     font-size: 18px;
     text-align: center;
 }
-.wrapperAbout li:first-child{
+.wrapperAbout .liRU:first-child{
     max-width: 268px;
     margin: 0 auto;
     padding-bottom: 22px;
 }
+.wrapperAbout .liUA:first-child{
+    max-width: 322px;
+    margin: 0 auto;
+    padding: 9px 0 32px;
+}
 .wrapperAbout li:last-child{
-    max-width: 214px;
+    /* max-width: 214px; */
     margin: 0 auto;
     padding-top: 30px;
 }

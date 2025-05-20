@@ -1,39 +1,40 @@
 import styles from './Effect.module.css'
 import keyIMG from './key.webp'
+import { useTranslation } from "react-i18next";
+
 
 export default function Effects() {
+
+  const {t, i18n} = useTranslation()
     return (
       <section className={styles.effectsSection}>
         <img className={styles.keyTop} src={keyIMG} alt="key" />
         <div className="container">
-          <h2 className={styles.titleEffects}>Возможные побочные эффекты:</h2>
+          <h2
+            className={`${styles.titleEffects} ${
+              i18n.language === "ua" ? styles.titleEffectsUA : ""
+            }`}
+          >
+            {t("effectSection.title")}
+          </h2>
           <ul className={styles.wrapperEffects}>
             <li>
-              <p>Потеря людей, которые не уважают твои границы</p>
+              <p>{t("effectSection.grid1")}</p>
             </li>
             <li>
-              <p>Увольнение с работы, которая делала тебя несчастной</p>
+              <p>{t("effectSection.grid2")}</p>
             </li>
             <li>
-              <p>
-                Смелость говорить «нет» и перестать тащить на себе чужие
-                проблемы
-              </p>
+              <p>{t("effectSection.grid3")}</p>
             </li>
             <li>
-              <p>
-                Расставание с партнёром, который разрушал твоё эмоциональное
-                состояние
-              </p>
+              <p>{t("effectSection.grid4")}</p>
             </li>
             <li>
-              <p>Осознание, что ты больше никому ничего не должен</p>
+              <p>{t("effectSection.grid5")}</p>
             </li>
             <li>
-              <p>
-                Прекращение общения с токсичными родственниками <br /> без
-                чувства вины
-              </p>
+              <p>{t("effectSection.grid6")}</p>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import styles from "./Key.module.css";
 import { useTranslation } from "react-i18next"; 
+import TextBlock from "../../common/TextBlock";
 
 export default function KeySections() {
 
@@ -7,8 +8,14 @@ export default function KeySections() {
   
   return (
     <section className={styles.keySections}>
-      <p className={styles.keySText}>{t("keySection.key1")}</p>
-      <p className={styles.keySText}>{t("keySection.key2")}</p>
+      <ul>
+        <li className={styles.keySText}>
+          <TextBlock tKey="keySection.key1" />
+        </li>
+        <li className={styles.keySText}>
+          <TextBlock tKey="keySection.key2" />
+        </li>
+      </ul>
     </section>
   );
 }

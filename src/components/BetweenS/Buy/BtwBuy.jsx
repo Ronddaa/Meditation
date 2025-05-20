@@ -1,19 +1,21 @@
 import CountdownTimer from '../../Timer/Timer';
 import styles from './BtwBuy.module.css'
+import { useTranslation } from 'react-i18next';
 
 export default function BtwBuy() {
+
+  const { t } = useTranslation()
+  
     return (
       <section className={styles.sectionBtwBuy}>
         <div className="container">
                 <p className={styles.btwText}>
-            Этот курс — не просто набор медитаций. Это глубокая работа с собой,
-            которая поможет тебе понять себя, освободиться от ненужного <br /> и начать
-            жить проще и легче
+          {t("btwBuy.text")}
           </p>
           <div className={styles.wrapperHeroBtn}>
             <p className={styles.discout}>-75%</p>
             <button className="buyBtn">купить курс</button>
-            <p className={styles.timingText}>предложение действует:</p>
+            <p className={styles.timingText}>{t("btwBuy.proposal")}</p>
             <CountdownTimer />
           </div>
         </div>

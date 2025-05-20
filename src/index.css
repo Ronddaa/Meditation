@@ -81,6 +81,9 @@ ol {
 a {
   text-decoration: none; /* Убираем подчеркивание ссылок */
 }
+p, li{
+  white-space: pre-line;
+}
 button {
   cursor: pointer; /* Добавляем палец при наведении на кнопку */
 }

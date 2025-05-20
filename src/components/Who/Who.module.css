@@ -12,6 +12,11 @@ color: transparent;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 10px;
+  text-align: center;
+}
+.titleWhoUA{
+    font-size: 38px;
+    margin-bottom: 0;
 }
 .sectionWho .mySwiper{
     padding-bottom: 20px;
