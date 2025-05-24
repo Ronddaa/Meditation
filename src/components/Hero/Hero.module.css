@@ -41,6 +41,11 @@
   grid-row-gap: 0px;
   margin-bottom: 318px;
 }
+/* @media (max-width:375px){
+  .mainTitle{
+    font-size: 58px;
+  }
+} */
 .mainTitleWhite {
   grid-area: 1 / 1 / 2 / 4;
 }

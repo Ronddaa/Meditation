@@ -3,7 +3,7 @@ import styles from './Timer.module.css'
 
 // Генерируем общее случайное время (в секундах) от 4 до 8 часов
 const getRandomTime = () => {
-  const hours = Math.floor(Math.random() * (8 - 4 + 1) + 4);
+  const hours = Math.floor(Math.random() * (6 - 4 + 1) + 4);
   const minutes = Math.floor(Math.random() * 60);
   const seconds = Math.floor(Math.random() * 60);
   return hours * 3600 + minutes * 60 + seconds;
