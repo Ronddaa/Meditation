@@ -9,7 +9,7 @@ import { Pagination } from "swiper/modules";
 
 export default function Reviews() {
   return (
-    <section className={styles.sectionReviews}>
+    <section className={styles.sectionReviews} id="reviewsSection">
       <div className="container">
         <h2 className={styles.titleReviews}>отзывы:</h2>
         <Swiper

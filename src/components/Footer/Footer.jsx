@@ -13,21 +13,27 @@ export default function Footer() {
         <h2 className={styles.titleFooter}>{t("footer.titleName")}</h2>
         <ul className={styles.wrapperSocialLinks}>
           <li>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/tviy.treners?igsh=MTc1ZHVpZnJlb3Jpcg=="
+              target="_blank"
+            >
               <svg className={styles.arrowList} width={32} height={32}>
                 <use xlinkHref={`${sprite}#icon-inst`}></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.tiktok.com/@tviy.treners?_t=ZN-8wcbivFlely&_r=1"
+              target="_blank"
+            >
               <svg className={styles.arrowList} width={32} height={32}>
                 <use xlinkHref={`${sprite}#icon-tt`}></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://t.me/maltsevaluba" target="_blank">
               <svg className={styles.arrowList} width={32} height={32}>
                 <use xlinkHref={`${sprite}#icon-teleg`}></use>
               </svg>

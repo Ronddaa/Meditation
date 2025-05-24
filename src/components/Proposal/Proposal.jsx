@@ -44,7 +44,13 @@ export default function Proposal() {
         </ul>
         <div className={styles.wrapperHeroBtn}>
           <p className={styles.discout}>-75%</p>
-          <button className="buyBtn">Я готова!</button>
+          <a
+            target="_blank"
+            href="https://secure.wayforpay.com/button/b84f43cf984f7"
+            className="buyBtn"
+          >
+            я готова!
+          </a>
           <CountdownTimer />
         </div>
       </div>

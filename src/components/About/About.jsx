@@ -7,7 +7,7 @@ export default function About() {
   const { t, i18n } = useTranslation();
 
   return (
-    <section className={styles.aboutSection}>
+    <section className={styles.aboutSection} id="aboutSection">
       <div className="container">
         <h2 className={styles.titleAbout}>про курс</h2>
         <article className={styles.aboutInfo}>

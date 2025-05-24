@@ -16,7 +16,7 @@ export default function Program() {
   };
 
   return (
-    <section className={styles.programSection}>
+    <section className={styles.programSection} id="programSection">
       <div className="container">
         <h2 className={styles.titleProgram}>
           {programSection.titleProgram || "программа курса:"}

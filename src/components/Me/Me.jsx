@@ -9,7 +9,7 @@ export default function Me() {
 
   return (
     <>
-      <section className={styles.sectionMe}>
+      <section className={styles.sectionMe} id="meSection">
         <div className="container">
           <h2 className={styles.titleMe}>про автора</h2>
         </div>

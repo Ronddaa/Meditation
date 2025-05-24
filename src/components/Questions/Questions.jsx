@@ -18,7 +18,7 @@ export default function Questions() {
   
 
   return (
-    <section className={styles.qSection}>
+    <section className={styles.qSection} id="questionsSection">
       <div className="container">
         <h2 className={styles.titleQ}>{t("questionsSection.title")}</h2>
         <ul className={styles.wrapperQList}>
