@@ -7,11 +7,15 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
+import { useTranslation } from "react-i18next";
+
 export default function Reviews() {
+
+  const {t} = useTranslation()
   return (
     <section className={styles.sectionReviews} id="reviewsSection">
       <div className="container">
-        <h2 className={styles.titleReviews}>отзывы:</h2>
+        <h2 className={styles.titleReviews}>{t("reviewsTitle")}</h2>
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={30}
