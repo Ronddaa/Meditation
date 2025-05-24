@@ -69,9 +69,23 @@
 }
 .bigText {
   max-width: 210px;
+  position: relative;
+  margin: auto 0 auto 30px;
+}
+.bigText::before{
+  content: url(../star.svg);
+  position: absolute;
+  left: -15px;
 }
 .lowText {
   max-width: 178px;
+  position: relative;
+  margin: auto 0 auto 30px;
+}
+.lowText::before{
+  content: url(../star.svg);
+  position: absolute;
+  left: -15px;
 }
 .wrapperHeroBtn{
     padding: 0 44px;
