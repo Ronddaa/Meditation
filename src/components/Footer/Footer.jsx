@@ -1,12 +1,16 @@
 import styles from "./Footer.module.css";
 import sprite from "../icons.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+
+  const {t} = useTranslation()
+
   return (
     <footer className={styles.footer}>
       <div className={styles.elipseTop}></div>
       <div className="container">
-        <h2 className={styles.titleFooter}>Любовь Мальцева</h2>
+        <h2 className={styles.titleFooter}>{t("footer.titleName")}</h2>
         <ul className={styles.wrapperSocialLinks}>
           <li>
             <a href="#">
@@ -42,10 +46,10 @@ export default function Footer() {
         </ul>
         <ul className={styles.offer}>
           <li>
-            <p>Договор оферты</p>
+            <p>{t("footer.offer")}</p>
           </li>
           <li>
-            <p>Политика конфиденциальности</p>
+            <p>{t("footer.policy")}и</p>
           </li>
         </ul>
       </div>

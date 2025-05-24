@@ -89,10 +89,10 @@ export default function BurgerMenu({ isOpen, onClose }) {
         </ul>
         <ul className={styles.offer}>
           <li>
-            <p>Договор оферты</p>
+            <p>{t("footer.offer")}</p>
           </li>
           <li>
-            <p>Политика конфиденциальности</p>
+            <p>{t("footer.policy")}</p>
           </li>
         </ul>
       </article>
