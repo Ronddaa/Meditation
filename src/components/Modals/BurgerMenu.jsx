@@ -120,10 +120,20 @@ export default function BurgerMenu({ isOpen, onClose }) {
         </ul>
         <ul className={styles.offer}>
           <li>
-            <p>{t("footer.offer")}</p>
+            <a
+              href="https://docs.google.com/document/d/1owsiAOKOE7RcxWAaepbq4uHLYbEuJDbpYXEtbXnxLvQ/edit?usp=sharing"
+              target="_blank"
+            >
+              {t("footer.offer")}
+            </a>
           </li>
           <li>
-            <p>{t("footer.policy")}</p>
+            <a
+              href="https://docs.google.com/document/d/1uXWsW_UGZ8l1u4_gfsmPElb8PHylH4rfxfYcVx32pGo/edit?usp=sharing"
+              target="_blank"
+            >
+              {t("footer.policy")}
+            </a>
           </li>
         </ul>
       </article>
