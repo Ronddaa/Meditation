@@ -30,6 +30,11 @@ header ul{
     justify-content: center;
     padding: 5px 10px;
 }
+@media (min-width:444px){
+    .wrapperBurgerMenu{
+        left: -67%;
+    }
+}
 .active{
     opacity: 1;
 }

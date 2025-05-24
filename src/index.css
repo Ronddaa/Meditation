@@ -64,6 +64,10 @@ html {
 #root{
   height: 100%;
 }
+body{
+  max-width: 445px;
+  margin: 0 auto;
+}
 div {
   position: relative;
 }
