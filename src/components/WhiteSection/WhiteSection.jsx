@@ -10,8 +10,8 @@ export default function WhiteSection() {
     <section className={styles.whiteSection}>
       <div className={styles.elipseTop}></div>
       <div className="container">
-        <h2 className={styles.titleWhiteSection}>{t("whiteSection.text1")}</h2>
-        <h2 className={styles.titleWhiteSection}>{t("whiteSection.text2")}</h2>
+        <p className={styles.titleWhiteSection}>{t("whiteSection.text1")}</p>
+        <p className={styles.titleWhiteSection}>{t("whiteSection.text2")}</p>
         <div className={styles.wrapperPrice}>
           <p className={styles.priceBefore}>53$</p>
           <p className={styles.priceNow}>13$</p>
