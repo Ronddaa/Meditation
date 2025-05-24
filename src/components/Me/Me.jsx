@@ -1,8 +1,12 @@
 import styles from "./Me.module.css";
 import MeIMG from "./Me.webp";
 import sprite from "../icons.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Me() {
+
+  const {t} = useTranslation()
+
   return (
     <>
       <section className={styles.sectionMe}>
@@ -13,64 +17,50 @@ export default function Me() {
           <img className={styles.meING} src={MeIMG} alt="Me" />
         </div>
         <div className="container">
-          <h3 className={styles.titleMyName}>Любовь Мальцева</h3>
-          <p className={styles.underTitle}>
-            автор первых в Украине психологических медитаций
-          </p>
+          <h3 className={styles.titleMyName}>{t("burgerMenu.name")}</h3>
+          <p className={styles.underTitle}>{t("meSection.underName")}</p>
           <ul className={styles.meInfoList}>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              <p>
-                Создатель медитаций, которые работают не через буддизм, а через
-                психологию
-              </p>
+              <p>{t("meSection.li1")}</p>
             </li>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              Дипломированный психолог, будущий психоаналитик
+              <p>{t("meSection.li2")}</p>
             </li>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              <p>
-                15 лет в балете: жесткая дисциплина, буллинг, высокие требования
-              </p>
+              <p>{t("meSection.li3")}</p>
             </li>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              <p>
-                Знаю, как справляться с кризисами, когда помощи ждать неоткуда
-              </p>
+              <p>{t("meSection.li4")}</p>
             </li>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              <p>
-                5+ лет личной терапии, выход из жесткого абьюза и 3 года РПП
-              </p>
+              <p>{t("meSection.li5")}</p>
             </li>
             <li>
               <svg className={styles.listStyleMe} width={13} height={13}>
                 <use xlinkHref={`${sprite}#icon-star`}></use>
               </svg>
-              <p>Практикую медитации и гвоздестояние 2+ года</p>
+              <p>{t("meSection.li6")}</p>
             </li>
           </ul>
         </div>
       </section>
       <section>
-        <p className={styles.btwText}>
-          Этот курс – инструмент глубокой работы с собой. Попробуй – и ты
-          увидишь разницу и начнешь жить проще и легче
-        </p>
+        <p className={styles.btwText}>{t("meSection.btwText")}</p>
       </section>
     </>
   );

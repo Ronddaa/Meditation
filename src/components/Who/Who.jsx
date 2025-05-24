@@ -26,7 +26,7 @@ export default function Who() {
             <p>{t("whoSection.slide2")}</p>
           </SwiperSlide>
           <SwiperSlide className={styles.swiperSlide}>
-            <p>{t("whoSection.slide3")}</p>
+            <p className={styles.widthUA}>{t("whoSection.slide3")}</p>
           </SwiperSlide>
         </Swiper>
       </div>

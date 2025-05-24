@@ -34,6 +34,9 @@ color: transparent;
     position: relative;
     text-align: center;
 }
+.swiperSlide .widthUA{
+    padding: 25px 12px;
+}
 .swiperSlide p::after{
     position: absolute;
     content: url(../Star2.svg);

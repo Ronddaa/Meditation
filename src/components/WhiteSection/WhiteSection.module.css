@@ -25,7 +25,7 @@
 }
 
 .titleWhiteSection {
-  font-size: 30px;
+  font-size: 22px;
   color: transparent;
   background: linear-gradient(90deg, #e1a230, #131313);
   -webkit-background-clip: text; /* Для Safari */

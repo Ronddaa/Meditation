@@ -1,9 +1,12 @@
 import { useState } from "react";
 import styles from "./Questions.module.css";
 import sprite from "../icons.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Questions() {
   const [activeItem, setActiveItem] = useState(null);
+
+  
 
   const items = [
     {
