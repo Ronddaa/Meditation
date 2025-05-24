@@ -59,7 +59,7 @@ export default function Me() {
           </ul>
         </div>
       </section>
-      <section>
+      <section className={styles.btwTextsection}>
         <p className={styles.btwText}>{t("meSection.btwText")}</p>
       </section>
     </>
