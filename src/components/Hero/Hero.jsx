@@ -47,16 +47,29 @@ export default function Hero() {
         </div>
         <article className={styles.wrapperInfoBtn}>
           <ul className={styles.wrapperAboutCourse}>
-            <li className={styles.aboutCourse}>
+            <li
+              className={`${
+                i18n.language === "ua"
+                  ? styles.aboutCourse
+                  : styles.aboutCourseRU
+              }`}
+            >
               <TextBlock tKey="hero.aboutCourses1" />
             </li>
-            <li className={styles.aboutCourse}>
+            <li
+              className={`${
+                i18n.language === "ua"
+                  ? styles.aboutCourse
+                  : styles.aboutCourseRU
+              }`}
+            >
               <TextBlock tKey="hero.aboutCourses2" />
             </li>
           </ul>
           <div className={styles.wrapperHeroBtn}>
             <p className={styles.discout}>-75%</p>
-            <a target='_blank'
+            <a
+              target="_blank"
               href="https://secure.wayforpay.com/button/b84f43cf984f7"
               className="buyBtn"
             >

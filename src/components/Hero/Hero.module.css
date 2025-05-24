@@ -136,14 +136,26 @@
     right: 30px;
     top: 5px;
 }
-.wrapperAboutCourse li{
+.wrapperAboutCourse .aboutCourse{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 16px;
     font-family: "Moula";
-    margin-left: 15px;
+    margin-left: 30px;
 }
-.wrapperAboutCourse li p:first-child::after{
+.wrapperAboutCourse .aboutCourse p:first-child::after{
+  content: url(../star.svg);
+  position: absolute;
+  left: 60px;
+}
+.wrapperAboutCourse .aboutCourseRU{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Moula";
+  margin-left: 15px;
+}
+.wrapperAboutCourse .aboutCourseRU p:first-child::after{
   content: url(../star.svg);
   position: absolute;
   left: 45px;
