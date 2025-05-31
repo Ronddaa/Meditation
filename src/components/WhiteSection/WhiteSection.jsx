@@ -3,9 +3,8 @@ import styles from "./WhiteSection.module.css";
 import { useTranslation } from "react-i18next";
 
 export default function WhiteSection() {
+  const { t } = useTranslation();
 
-  const { t } = useTranslation()
-  
   return (
     <section className={styles.whiteSection}>
       <div className={styles.elipseTop}></div>
@@ -14,7 +13,7 @@ export default function WhiteSection() {
         <p className={styles.titleWhiteSection}>{t("whiteSection.text2")}</p>
         <div className={styles.wrapperPrice}>
           <p className={styles.priceBefore}>53$</p>
-          <p className={styles.priceNow}>13$</p>
+          <p className={styles.priceNow}>33$</p>
         </div>
         <div className={styles.wrapperHeroBtn}>
           <p className={styles.discout}>-75%</p>
